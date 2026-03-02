@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بطولة رمضان eFootball</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.container{
+margin-top:100px;
+animation: fadeIn 2s ease-in-out;
+}
+
+h1{
+font-size:50px;
+text-shadow:0 0 20px #00ffcc;
+}
+
+h2{
+margin-top:-10px;
+color:#00ffcc;
+}
+
+p{
+font-size:18px;
+max-width:600px;
+margin:auto;
+}
+
+ul{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+ul li{
+margin:10px 0;
+font-size:17px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#00ffcc;
+color:black;
+text-decoration:none;
+border-radius:10px;
+margin-top:25px;
+transition:0.3s;
+font-weight:bold;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.1);
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop muted id="music">
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+<h1>السلام عليكم 👋</h1>
+<h2>مرحبا بكم في بطولة رمضان للعبة eFootball Mobile</h2>
+
+<p>
+نعود لتنظيم بطولة بعد 4 سنوات من آخر تنظيم لنا.
+شروط التسجيل في هذه البطولة:
+</p>
+
+<ul>
+<li>احترام جميع اللاعبين</li>
+<li>الحضور في الوقت المحدد</li>
+<li>عدم الغش</li>
+</ul>
+
+<a href="inscription.html" class="btn">سجل الآن</a>
+</div>
+
+<script>
+document.addEventListener("click", function(){
+var audio = document.getElementById("music");
+audio.muted = false;
+audio.play();
+});
+</script>
+
+</body>
+</html>
